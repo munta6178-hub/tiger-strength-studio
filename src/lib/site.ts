@@ -55,7 +55,6 @@ export const GALLERY: Shot[] = [
   { src: c1_5.url, alt: "Member standing on the Tiger Gym training floor" },
   { src: c2_9.url, alt: "Group of members posing back-to-camera at Tiger Gym" },
   { src: c1_3.url, alt: "Two training partners on the Tiger Gym floor" },
-  { src: c1_8.url, alt: "Member posing in low light inside Tiger Gym" },
   { src: c2_6.url, alt: "Member posing after a strength training block" },
   { src: c1_11.url, alt: "Members at a local bodybuilding event" },
   { src: c1_13.url, alt: "Training partners posing together at Tiger Gym" },
