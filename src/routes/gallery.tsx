@@ -46,20 +46,24 @@ function Gallery() {
       </section>
 
       <section className="px-5 py-16 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-[1440px] columns-2 gap-3 lg:columns-3 xl:columns-4 [&>*]:mb-3">
+        <div className="mx-auto grid max-w-[1440px] grid-cols-2 gap-3 lg:grid-cols-3">
           {GALLERY.map((s, i) => (
-            <Reveal key={s.src + i} delay={(i % 4) * 60} className="break-inside-avoid">
+            <Reveal
+              key={s.src + i}
+              delay={(i % 3) * 60}
+              className={i % 5 === 0 ? "lg:col-span-2" : ""}
+            >
               <button
                 type="button"
                 onClick={() => setIndex(i)}
-                className="group relative block w-full overflow-hidden border border-border/60 focus-visible:ring-1 focus-visible:ring-gold focus-visible:outline-none"
+                className="group relative block aspect-[4/5] w-full overflow-hidden border border-border/60 focus-visible:ring-1 focus-visible:ring-gold focus-visible:outline-none lg:aspect-auto lg:h-[460px]"
                 aria-label={`View photo: ${s.alt}`}
               >
                 <img
                   src={s.src}
                   alt={s.alt}
                   loading="lazy"
-                  className="w-full object-cover grayscale-[0.3] transition-all duration-700 group-hover:scale-[1.04] group-hover:grayscale-0"
+                  className="h-full w-full object-cover grayscale-[0.3] transition-all duration-700 group-hover:scale-[1.04] group-hover:grayscale-0"
                 />
                 <span className="absolute inset-0 bg-background/30 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
               </button>
