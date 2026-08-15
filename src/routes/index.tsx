@@ -27,16 +27,16 @@ export const Route = createFileRoute("/")({
 
 function Hero() {
   return (
-    <section className="relative min-h-[92vh] overflow-hidden">
+    <section className="relative min-h-[88vh] overflow-hidden">
       <img
         src={IMG.heroGym.src}
         alt={IMG.heroGym.alt}
-        className="absolute inset-0 h-full w-full object-cover opacity-40"
+        className="absolute inset-0 h-full w-full object-cover object-[50%_72%] opacity-45"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
       <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-r from-background/85 to-transparent lg:w-2/3" />
 
-      <div className="relative mx-auto flex min-h-[92vh] max-w-[1440px] flex-col justify-end px-5 pt-32 pb-16 sm:px-8 lg:px-12 lg:pb-24">
+      <div className="relative mx-auto flex min-h-[88vh] max-w-[1440px] flex-col justify-end px-5 pt-32 pb-16 sm:px-8 lg:px-12 lg:pb-28">
         <Reveal>
           <p className="label-eyebrow">Dera Ismail Khan · Est. Strength</p>
           <h1 className="mt-6 max-w-5xl font-display text-[clamp(2.9rem,9vw,7.5rem)] leading-[0.86] font-extrabold">
