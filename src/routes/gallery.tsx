@@ -25,21 +25,6 @@ export const Route = createFileRoute("/gallery")({
   component: Gallery,
 });
 
-const SPAN = [
-  "sm:col-span-2 sm:row-span-2",
-  "",
-  "",
-  "sm:row-span-2",
-  "",
-  "",
-  "",
-  "sm:col-span-2",
-  "",
-  "",
-  "sm:row-span-2",
-  "",
-];
-
 function Gallery() {
   const [index, setIndex] = useState<number | null>(null);
 
@@ -61,24 +46,20 @@ function Gallery() {
       </section>
 
       <section className="px-5 py-16 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-[1440px] auto-rows-[190px] grid-cols-2 gap-3 sm:auto-rows-[220px] lg:grid-cols-4">
+        <div className="mx-auto max-w-[1440px] columns-2 gap-3 lg:columns-3 xl:columns-4 [&>*]:mb-3">
           {GALLERY.map((s, i) => (
-            <Reveal
-              key={s.src + i}
-              delay={(i % 4) * 60}
-              className={SPAN[i] ?? ""}
-            >
+            <Reveal key={s.src + i} delay={(i % 4) * 60} className="break-inside-avoid">
               <button
                 type="button"
                 onClick={() => setIndex(i)}
-                className="group relative block h-full w-full overflow-hidden border border-border/60 focus-visible:ring-1 focus-visible:ring-gold focus-visible:outline-none"
+                className="group relative block w-full overflow-hidden border border-border/60 focus-visible:ring-1 focus-visible:ring-gold focus-visible:outline-none"
                 aria-label={`View photo: ${s.alt}`}
               >
                 <img
                   src={s.src}
                   alt={s.alt}
                   loading="lazy"
-                  className="h-full w-full object-cover grayscale-[0.35] transition-all duration-700 group-hover:scale-[1.04] group-hover:grayscale-0"
+                  className="w-full object-cover grayscale-[0.3] transition-all duration-700 group-hover:scale-[1.04] group-hover:grayscale-0"
                 />
                 <span className="absolute inset-0 bg-background/30 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
               </button>

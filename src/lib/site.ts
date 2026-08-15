@@ -10,7 +10,7 @@ import c1_2 from "@/assets/c1_2.jpg.asset.json";
 import c1_3 from "@/assets/c1_3.jpg.asset.json";
 import c1_5 from "@/assets/c1_5.jpg.asset.json";
 import c1_7 from "@/assets/c1_7.jpg.asset.json";
-import c1_8 from "@/assets/c1_8.jpg.asset.json";
+
 import c1_9 from "@/assets/c1_9.jpg.asset.json";
 import c1_11 from "@/assets/c1_11.jpg.asset.json";
 import c1_13 from "@/assets/c1_13.jpg.asset.json";
