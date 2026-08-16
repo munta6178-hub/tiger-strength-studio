@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
-import { IMG, SHOWCASE, PHONE, PHONE_HREF } from "@/lib/site";
+import { IMG, SHOWCASE, PHONE, PHONE_HREF, EXTRA_TRANSFORMATIONS } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -183,6 +183,22 @@ function Transformation() {
                 alt={s.alt}
                 loading="lazy"
                 className="h-[420px] w-full border border-border/60 object-cover sm:h-[560px]"
+              />
+              <figcaption className="absolute top-5 left-5 border border-gold/60 bg-background/80 px-4 py-2 text-[0.62rem] font-bold tracking-[0.28em] text-gold uppercase backdrop-blur-sm">
+                {s.tag}
+              </figcaption>
+            </Reveal>
+          ))}
+        </div>
+
+        <div className="mt-3 grid gap-3">
+          {EXTRA_TRANSFORMATIONS.map((s, i) => (
+            <Reveal key={s.src} delay={i * 120} as="figure" className="relative">
+              <img
+                src={s.src}
+                alt={s.alt}
+                loading="lazy"
+                className="w-full border border-border/60 object-contain"
               />
               <figcaption className="absolute top-5 left-5 border border-gold/60 bg-background/80 px-4 py-2 text-[0.62rem] font-bold tracking-[0.28em] text-gold uppercase backdrop-blur-sm">
                 {s.tag}

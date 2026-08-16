@@ -1,12 +1,19 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Clock } from "lucide-react";
 import { NAV, PHONE, PHONE_HREF } from "@/lib/site";
+import logo from "@/assets/tiger-gym-logo.png.asset.json";
 
 export function Footer() {
   return (
     <footer className="border-t border-border/70 bg-charcoal">
       <div className="mx-auto grid max-w-[1440px] gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[1.2fr_1fr_1fr] lg:px-12">
         <div>
+          <img
+            src={logo.url}
+            alt="Tiger Gym Dikhan logo"
+            className="mb-5 h-16 w-auto"
+            loading="lazy"
+          />
           <p className="font-display text-2xl font-extrabold tracking-[0.1em] uppercase">
             Tiger<span className="text-gold">Gym</span>{" "}
             <span className="text-sm tracking-[0.3em] text-muted-foreground">Dikhan</span>

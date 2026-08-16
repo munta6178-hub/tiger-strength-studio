@@ -3,10 +3,16 @@ import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { NAV, PHONE, PHONE_HREF } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/tiger-gym-logo.png.asset.json";
 
 function Wordmark() {
   return (
     <Link to="/" className="group flex items-baseline gap-2" aria-label="Tiger Gym Dikhan home">
+      <img
+        src={logo.url}
+        alt="Tiger Gym Dikhan logo"
+        className="h-10 w-auto self-center sm:h-12"
+      />
       <span className="font-display text-lg font-extrabold tracking-[0.12em] uppercase sm:text-xl">
         Tiger<span className="text-gold">Gym</span>
       </span>

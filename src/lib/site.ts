@@ -14,6 +14,8 @@ import c1_7 from "@/assets/c1_7.jpg.asset.json";
 import c1_9 from "@/assets/c1_9.jpg.asset.json";
 import c1_11 from "@/assets/c1_11.jpg.asset.json";
 import c1_13 from "@/assets/c1_13.jpg.asset.json";
+import t2 from "@/assets/transformation-2.jpg.asset.json";
+import t3 from "@/assets/transformation-3.jpg.asset.json";
 
 export const PHONE = "+92 305 9562887";
 export const PHONE_HREF = "tel:+923059562887";
@@ -36,6 +38,19 @@ export const IMG = {
   before: { src: before.url, alt: "Member before starting training at Tiger Gym D.I. Khan" },
   after: { src: after.url, alt: "The same member after consistent training at Tiger Gym D.I. Khan" },
 };
+
+export const EXTRA_TRANSFORMATIONS: { src: string; alt: string; tag: string }[] = [
+  {
+    src: t2.url,
+    alt: "Back double biceps before and after transformation of a Tiger Gym member",
+    tag: "Before / After",
+  },
+  {
+    src: t3.url,
+    alt: "Front pose before and after transformation of a Tiger Gym member",
+    tag: "Before / After",
+  },
+];
 
 export type Shot = { src: string; alt: string };
 
