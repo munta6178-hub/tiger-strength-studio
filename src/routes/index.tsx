@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
-import { IMG, SHOWCASE, PHONE, PHONE_HREF } from "@/lib/site";
+import { IMG, SHOWCASE, PHONE, PHONE_HREF, EXTRA_TRANSFORMATIONS } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
   head: () => ({
