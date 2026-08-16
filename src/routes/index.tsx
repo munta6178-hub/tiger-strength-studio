@@ -191,6 +191,22 @@ function Transformation() {
           ))}
         </div>
 
+        <div className="mt-3 grid gap-3">
+          {EXTRA_TRANSFORMATIONS.map((s, i) => (
+            <Reveal key={s.src} delay={i * 120} as="figure" className="relative">
+              <img
+                src={s.src}
+                alt={s.alt}
+                loading="lazy"
+                className="w-full border border-border/60 object-contain"
+              />
+              <figcaption className="absolute top-5 left-5 border border-gold/60 bg-background/80 px-4 py-2 text-[0.62rem] font-bold tracking-[0.28em] text-gold uppercase backdrop-blur-sm">
+                {s.tag}
+              </figcaption>
+            </Reveal>
+          ))}
+        </div>
+
         <Reveal delay={160} className="mt-10 max-w-2xl">
           <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">
             No shortcuts and no filters — progressive overload, controlled nutrition, and months
