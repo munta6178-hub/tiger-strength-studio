@@ -1,3 +1,21 @@
+import heroAsset from "@/assets/hero.jpg.asset.json";
+import trainerAsset from "@/assets/trainer.jpg.asset.json";
+import c1_2Asset from "@/assets/c1_2.jpg.asset.json";
+import c1_3Asset from "@/assets/c1_3.jpg.asset.json";
+import c1_5Asset from "@/assets/c1_5.jpg.asset.json";
+import c1_7Asset from "@/assets/c1_7.jpg.asset.json";
+import c1_9Asset from "@/assets/c1_9.jpg.asset.json";
+import c1_11Asset from "@/assets/c1_11.jpg.asset.json";
+import c1_13Asset from "@/assets/c1_13.jpg.asset.json";
+import c2_1Asset from "@/assets/c2_1.jpg.asset.json";
+import c2_3Asset from "@/assets/c2_3.jpg.asset.json";
+import c2_4Asset from "@/assets/c2_4.jpg.asset.json";
+import c2_6Asset from "@/assets/c2_6.jpg.asset.json";
+import c2_7Asset from "@/assets/c2_7.jpg.asset.json";
+import c2_9Asset from "@/assets/c2_9.jpg.asset.json";
+import t2Asset from "@/assets/transformation-2.jpg.asset.json";
+import t3Asset from "@/assets/transformation-3.jpg.asset.json";
+
 export const PHONE = "+92 305 9562887";
 export const PHONE_HREF = "tel:+923059562887";
 export const NAV = [
@@ -9,23 +27,23 @@ export const NAV = [
   { label: "Visit Us", to: "/visit" },
 ] as const;
 
-const hero = "/images/hero.jpg";
-const trainer = "/images/trainer.jpg";
-const before = "/images/c2_3.jpg";
-const after = "/images/c2_4.jpg";
-const c2_1 = "/images/c2_1.jpg";
-const c2_6 = "/images/c2_6.jpg";
-const c2_7 = "/images/c2_7.jpg";
-const c2_9 = "/images/c2_9.jpg";
-const c1_2 = "/images/c1_2.jpg";
-const c1_3 = "/images/c1_3.jpg";
-const c1_5 = "/images/c1_5.jpg";
-const c1_7 = "/images/c1_7.jpg";
-const c1_9 = "/images/c1_9.jpg";
-const c1_11 = "/images/c1_11.jpg";
-const c1_13 = "/images/c1_13.jpg";
-const t2 = "/images/transformation-2.jpg";
-const t3 = "/images/transformation-3.jpg";
+const hero = heroAsset.url;
+const trainer = trainerAsset.url;
+const before = c2_3Asset.url;
+const after = c2_4Asset.url;
+const c2_1 = c2_1Asset.url;
+const c2_6 = c2_6Asset.url;
+const c2_7 = c2_7Asset.url;
+const c2_9 = c2_9Asset.url;
+const c1_2 = c1_2Asset.url;
+const c1_3 = c1_3Asset.url;
+const c1_5 = c1_5Asset.url;
+const c1_7 = c1_7Asset.url;
+const c1_9 = c1_9Asset.url;
+const c1_11 = c1_11Asset.url;
+const c1_13 = c1_13Asset.url;
+const t2 = t2Asset.url;
+const t3 = t3Asset.url;
 
 export const IMG = {
   heroGym: { src: hero, alt: "Training floor at Tiger Gym D.I. Khan with strength machines and a heavy bag" },
