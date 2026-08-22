@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Clock } from "lucide-react";
 import { NAV, PHONE, PHONE_HREF } from "@/lib/site";
-import logo from "@/assets/tiger-gym-logo.png.asset.json";
+const logo = { url: "/images/tiger-gym-logo.png" };
 
 export function Footer() {
   return (
