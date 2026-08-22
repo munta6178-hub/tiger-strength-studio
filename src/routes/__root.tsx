@@ -86,6 +86,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Tiger Gym Dera Ismail Khan — coached strength and physique training led by Tiger Hussain Marwat.",
       },
       { name: "author", content: "Tiger Gym Dikhan" },
+      { name: "google-site-verification", content: "zR298ZD6-mHynSLB5cl9z6enzwJEyKEdWqsPBlkq7HI" },
       { property: "og:title", content: "Tiger Gym Dikhan | Premium Strength Training" },
       {
         property: "og:description",
