@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { NAV, PHONE, PHONE_HREF } from "@/lib/site";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/tiger-gym-logo.png.asset.json";
+const logo = { url: "/images/tiger-gym-logo.png" };
 
 function Wordmark() {
   return (
